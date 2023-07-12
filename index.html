@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QuickMathTS</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>Quick Math (TypeScript)</h1>
+        <div class="stat">
+            <div class="scoreboard">
+                <h2 class="shortScBoard">Timer: <span id="timer">-</span> sec</h2>
+                <h2 class="shortScBoard">Score: <span id="score">-</span> pts</h2>
+            </div>
+            <h2 class="longScBoard">Avg. time used: <span id="spd">-</span> sec/prob.</h2>
+            <h2 class="longScBoard">Accuracy: <span id="acc">-</span>%</h2>
+        </div>
+        <div class="card">
+            <h3 class="eq" id="equation">&nbsp;</h3>
+            <span class="intro" id="intro">
+                Press "Start" when you're ready.
+            </span>
+            <button class="btn" id="start">Start!</button>
+            <div class="inputAns" id="inputAns">
+                <div class="inputBox">
+                    <input class="input" id="answer" type="number" maxlength="5">
+                </div>
+                <button class="btn" id="submitAns">Confirm!</button>
+            </div>
+        </div>
+        <span id="ps">Rule: Please, do not use any kind of cheating :D</span>
+    </body>
+    <script src="./script.js" type="module"></script>
+</html>

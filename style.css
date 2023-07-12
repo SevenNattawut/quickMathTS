@@ -1,0 +1,144 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    background-color: rgb(23, 28, 54);
+
+    color: white;
+
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.stat {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em 0 1.5em; 
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shortScBoard {
+    width: 7.5em;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 30em;
+    height: 18em;
+    border-radius: 20px;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    align-items: center;
+}
+
+h3 {
+    font-size: 5em;
+    margin: 0;
+}
+
+.intro {
+    display:block;
+    font-size: 2em;
+}
+
+.eq{
+    display: none;
+}
+
+.inputAns {
+    display: none;
+    gap: 1.5em;
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputBox::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: black;
+    transition: width 0.2s ease-out;
+}
+
+.inputBox:hover::after,  
+.inputBox:focus-within::after {
+    width: 90% !important;
+}
+
+.input {
+    border: none;
+    outline: none;
+    height: 2em;
+    font-size: 1.5em;
+    width: 9em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* hide arrow in number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btn {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.1s ease-in-out;
+    width: 5em;
+    height:  3em;
+    transform: translate(0, -10px);
+
+    box-shadow: 0 10px rgba(119, 119, 119, 0.534);
+}
+
+.btn.btn:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.btn:active {
+    transform: translate(0,0);
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0 0 rgba(119, 119, 119, 0.534);
+}
+
