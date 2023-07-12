@@ -3,14 +3,6 @@
     class Timer {
         private running:Boolean = false;
         private startTime: number = 0;
-
-        private getCurrentTime(): number {
-            if (!this.running) {
-                return 0;
-            }
-
-            return Date.now() - this.startTime;
-        }
         
         start() {
             if (this.running) {

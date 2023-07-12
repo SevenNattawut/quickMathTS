@@ -5,12 +5,6 @@
             this.running = false;
             this.startTime = 0;
         }
-        Timer.prototype.getCurrentTime = function () {
-            if (!this.running) {
-                return 0;
-            }
-            return Date.now() - this.startTime;
-        };
         Timer.prototype.start = function () {
             if (this.running) {
                 return console.error("Timer is stopped.");
